@@ -13,7 +13,11 @@ export default function RoiPage() {
         <h1 className="text-3xl font-bold tracking-tight text-slate-50 sm:text-4xl">
           Calculadora de ROI
         </h1>
-        <p className="mt-4 text-slate-400">Em breve.</p>
+        <p className="mx-auto mt-4 max-w-md text-sm leading-relaxed text-slate-400">
+          O Kardovik Tools evolui continuamente. Novas ferramentas e recursos
+          especializados serão disponibilizados regularmente para apoiar
+          profissionais e estudantes de odontologia.
+        </p>
       </div>
     </div>
   )
