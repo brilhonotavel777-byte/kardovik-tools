@@ -8,3 +8,9 @@ export const TOOLS = [
   { slug: 'parcelamento', label: 'Parcelamento', href: '/parcelamento' },
   { slug: 'rentabilidade', label: 'Rentabilidade', href: '/rentabilidade' },
 ] as const
+
+export const PRODUCT_LINKS = [
+  { label: 'Kardovik', href: APP_URL },
+  { label: 'Blog', href: `${APP_URL}/blog` },
+  { label: 'Contato', href: `${APP_URL}/contato` },
+] as const
