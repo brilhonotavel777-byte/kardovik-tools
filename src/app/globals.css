@@ -5,13 +5,59 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* ── Overlay utilities ─────────────────────────────── */
 @utility bg-grid {
   background-image:
-    linear-gradient(to right, rgb(255 255 255 / 0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, rgb(255 255 255 / 0.03) 1px, transparent 1px);
-  background-size: 32px 32px;
+    linear-gradient(to right, rgb(255 255 255 / 0.022) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255 255 255 / 0.022) 1px, transparent 1px);
+  background-size: 40px 40px;
 }
 
+@utility bg-dots {
+  background-image: radial-gradient(
+    circle,
+    rgb(255 255 255 / 0.055) 1px,
+    transparent 1px
+  );
+  background-size: 20px 20px;
+}
+
+/* ── Keyframe animations ──────────────────────────── */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes glow-breathe {
+  0%, 100% { opacity: 0.65; }
+  50%       { opacity: 1; }
+}
+
+/* ── Animation utilities ──────────────────────────── */
+@utility animate-fade-up {
+  animation: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@utility animate-fade-in {
+  animation: fade-in 0.5s ease-out both;
+}
+
+@utility animate-glow-breathe {
+  animation: glow-breathe 7s ease-in-out infinite;
+}
+
+/* ── Base ─────────────────────────────────────────── */
 body {
   background-color: #020617;
   color: #f8fafc;
