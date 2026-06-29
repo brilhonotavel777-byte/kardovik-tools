@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { TOOL_HORA_CLINICA } from '@/lib/constants'
 import { ToolPageShell } from '@/components/tools/ToolPageShell'
 import { IconClock } from '@/components/icons'
+import { HoraClinicaSimulator } from '@/features/hora-clinica/HoraClinicaSimulator'
 
 export const metadata: Metadata = {
   title: 'Calculadora de Hora Clínica — Kardovik Tools',
@@ -26,6 +27,7 @@ export default function HoraClinicaPage() {
       answers={TOOL_HORA_CLINICA.answers}
       interpretation={TOOL_HORA_CLINICA.interpretation}
       action={TOOL_HORA_CLINICA.action}
+      calculatorSlot={<HoraClinicaSimulator />}
     />
   )
 }
