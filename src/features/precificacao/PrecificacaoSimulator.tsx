@@ -212,7 +212,7 @@ export function PrecificacaoSimulator() {
   }
 
   return (
-    <div className="mt-10">
+    <div className="mt-6">
       {/* ── Formulário ─────────────────────────────────────────────── */}
       <div className="rounded-2xl border border-white/[0.08] bg-slate-900/50 p-6 backdrop-blur-sm sm:p-8">
         <p className="mb-1 text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
