@@ -28,6 +28,7 @@ export default function PrecificacaoPage() {
       interpretation={TOOL_PRECIFICACAO.interpretation}
       action={TOOL_PRECIFICACAO.action}
       calculatorSlot={<PrecificacaoSimulator />}
+      contentClassName="py-20 md:pt-16 lg:pt-14"
     />
   )
 }

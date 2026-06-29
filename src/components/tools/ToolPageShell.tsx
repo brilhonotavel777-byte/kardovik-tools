@@ -33,6 +33,11 @@ interface ToolPageShellProps {
    * both after the first result is shown).
    */
   calculatorSlot?: React.ReactNode
+  /**
+   * Optional override for the content container's padding/spacing classes.
+   * Defaults to 'py-20' — use for page-specific vertical rhythm adjustments.
+   */
+  contentClassName?: string
 }
 
 export function ToolPageShell({
@@ -51,6 +56,7 @@ export function ToolPageShell({
   interpretation,
   action,
   calculatorSlot,
+  contentClassName = 'py-20',
 }: ToolPageShellProps) {
   return (
     <div className="relative">
@@ -66,7 +72,7 @@ export function ToolPageShell({
       </div>
 
       {/* Content */}
-      <div className="relative mx-auto max-w-3xl px-4 py-20 sm:px-6 lg:px-8">
+      <div className={`relative mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 ${contentClassName}`}>
         {/* Back navigation */}
         <Link
           href="/#ferramentas"
