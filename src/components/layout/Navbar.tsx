@@ -31,22 +31,21 @@ export function Navbar() {
             >
               Ferramentas
             </a>
-            <a
-              href={APP_URL}
-              className="rounded-lg px-3 py-1.5 text-sm text-slate-400 transition-colors duration-200 hover:bg-white/[0.05] hover:text-slate-50"
-            >
-              Sobre
-            </a>
           </div>
 
           {/* CTAs */}
           <div className="flex items-center gap-2">
+            {/* Secondary — Conhecer Kardovik, desktop only, opens in new tab */}
             <a
               href={APP_URL}
-              className="hidden rounded-xl px-4 py-2 text-sm font-medium text-slate-400 transition-colors duration-200 hover:bg-white/[0.05] hover:text-slate-50 md:inline-flex focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden rounded-xl border border-white/[0.1] px-4 py-2 text-sm font-medium text-slate-400 transition-all duration-200 hover:border-white/[0.18] hover:text-slate-200 md:inline-flex focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
             >
-              Entrar
+              Conhecer Kardovik
             </a>
+
+            {/* Primary CTA */}
             <a
               href="#ferramentas"
               className="inline-flex h-9 items-center rounded-xl bg-blue-600 px-4 text-sm font-semibold text-white shadow-[0_0_0_0_rgba(59,130,246,0)] transition-all duration-300 hover:bg-blue-500 hover:shadow-[0_0_20px_rgba(59,130,246,0.35)] active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#020617]"

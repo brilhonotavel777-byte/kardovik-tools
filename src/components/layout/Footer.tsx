@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import { APP_DESCRIPTION, APP_NAME, APP_URL, PRODUCT_LINKS, TOOLS } from '@/lib/constants'
+import { APP_DESCRIPTION, APP_NAME, APP_URL, TOOLS } from '@/lib/constants'
+import { IconExternalLink } from '@/components/icons'
 import { Container } from '@/components/layout/Container'
 
 export function Footer() {
@@ -24,6 +25,8 @@ export function Footer() {
               Parte do ecossistema{' '}
               <a
                 href={APP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-slate-500 underline-offset-2 transition-colors duration-200 hover:text-slate-300 hover:underline"
               >
                 Kardovik
@@ -39,34 +42,45 @@ export function Footer() {
             </h3>
             <ul className="space-y-3">
               {TOOLS.map((tool) => (
-                <li key={tool.slug}>
+                <li key={tool.id}>
                   <Link
                     href={tool.href}
                     className="text-sm text-slate-400 transition-colors duration-200 hover:text-slate-50"
                   >
-                    {tool.label}
+                    {tool.shortTitle}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Kardovik — external links use <a> */}
+          {/* Kardovik — external, opens in new tab */}
           <div>
             <h3 className="mb-4 text-xs font-semibold uppercase tracking-widest text-slate-600">
               Kardovik
             </h3>
             <ul className="space-y-3">
-              {PRODUCT_LINKS.map((link) => (
-                <li key={link.href}>
-                  <a
-                    href={link.href}
-                    className="text-sm text-slate-400 transition-colors duration-200 hover:text-slate-50"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a
+                  href={APP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-slate-400 transition-colors duration-200 hover:text-slate-50"
+                >
+                  Conheça o Kardovik Software
+                </a>
+              </li>
+              <li>
+                <a
+                  href={APP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-xs text-slate-600 transition-colors duration-200 hover:text-slate-400"
+                >
+                  www.kardovik.com.br
+                  <IconExternalLink size={10} />
+                </a>
+              </li>
             </ul>
           </div>
         </div>

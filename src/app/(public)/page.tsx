@@ -1,41 +1,45 @@
 import Link from 'next/link'
 import {
   IconArrowRight,
+  IconClock,
   IconCreditCard,
   IconPieChart,
+  IconScale,
   IconShield,
   IconStar,
-  IconTrendingUp,
+  IconTag,
   IconZap,
 } from '@/components/icons'
+import { APP_URL, TOOLS } from '@/lib/constants'
 
-const TOOLS_CONTENT = [
+// Visual mapping for each tool — icon component + color theme
+const TOOLS_VISUAL = [
   {
-    icon: IconTrendingUp,
-    title: 'Calculadora de ROI',
-    description:
-      'Calcule o retorno financeiro de campanhas, tratamentos e investimentos clínicos com precisão.',
-    href: '/roi',
+    icon: IconTag,
     iconColor: 'text-blue-400',
     iconBg: 'bg-blue-500/10',
     hoverGlow: 'hover:shadow-[0_8px_40px_rgba(59,130,246,0.12)]',
   },
   {
+    icon: IconClock,
+    iconColor: 'text-violet-400',
+    iconBg: 'bg-violet-500/10',
+    hoverGlow: 'hover:shadow-[0_8px_40px_rgba(139,92,246,0.12)]',
+  },
+  {
     icon: IconCreditCard,
-    title: 'Parcelamento',
-    description:
-      'Simule e apresente parcelas de tratamentos com clareza — para você e para o paciente.',
-    href: '/parcelamento',
     iconColor: 'text-cyan-400',
     iconBg: 'bg-cyan-500/10',
     hoverGlow: 'hover:shadow-[0_8px_40px_rgba(6,182,212,0.12)]',
   },
   {
+    icon: IconScale,
+    iconColor: 'text-amber-400',
+    iconBg: 'bg-amber-500/10',
+    hoverGlow: 'hover:shadow-[0_8px_40px_rgba(245,158,11,0.12)]',
+  },
+  {
     icon: IconPieChart,
-    title: 'Rentabilidade',
-    description:
-      'Analise margem, custo e lucro por procedimento para decidir onde concentrar seus esforços.',
-    href: '/rentabilidade',
     iconColor: 'text-emerald-400',
     iconBg: 'bg-emerald-500/10',
     hoverGlow: 'hover:shadow-[0_8px_40px_rgba(52,211,153,0.12)]',
@@ -74,31 +78,25 @@ export default function Home() {
     <>
       {/* ── Hero ─────────────────────────────────────────── */}
       <section className="relative overflow-hidden">
-        {/* Decorative background */}
         <div aria-hidden="true" className="pointer-events-none absolute inset-0">
           <div className="bg-grid absolute inset-0" />
           <div className="bg-dots absolute inset-0 opacity-40" />
-          {/* Primary glow — breathing */}
           <div className="animate-glow-breathe absolute left-1/2 top-[38%] h-[640px] w-[1000px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-600/[0.09] blur-[140px]" />
-          {/* Secondary glow — static */}
           <div className="absolute left-[62%] top-[62%] h-[340px] w-[460px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-500/[0.05] blur-[100px]" />
-          {/* Bottom fade */}
           <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-[#020617] to-transparent" />
         </div>
 
         <div className="relative mx-auto max-w-4xl px-4 pb-32 pt-28 text-center sm:px-6 lg:px-8">
-          {/* Badge */}
           <div
             className="animate-fade-up mb-8 inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/[0.07] px-4 py-1.5"
             style={{ animationDelay: '0ms' }}
           >
             <span className="h-1.5 w-1.5 rounded-full bg-blue-400" />
             <span className="text-xs font-medium text-blue-300">
-              Ferramentas gratuitas · sem cadastro · para odontologia
+              5 ferramentas gratuitas · sem cadastro · para odontologia
             </span>
           </div>
 
-          {/* Headline */}
           <h1
             className="animate-fade-up text-4xl font-bold leading-[1.1] tracking-tight text-slate-50 sm:text-5xl md:text-6xl lg:text-[68px]"
             style={{ animationDelay: '80ms' }}
@@ -110,16 +108,14 @@ export default function Home() {
             </span>
           </h1>
 
-          {/* Subheadline */}
           <p
             className="animate-fade-up mx-auto mt-7 max-w-xl text-base leading-relaxed text-slate-400 sm:text-[17px]"
             style={{ animationDelay: '160ms' }}
           >
-            ROI, parcelamento e rentabilidade calculados com precisão.
-            Para dentistas, estudantes e gestores que precisam decidir com dados reais.
+            5 calculadoras financeiras especializadas para dentistas, gestores e estudantes.
+            Calcule, interprete e decida com dados reais.
           </p>
 
-          {/* CTAs */}
           <div
             className="animate-fade-up mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row"
             style={{ animationDelay: '240ms' }}
@@ -132,7 +128,9 @@ export default function Home() {
               <IconArrowRight size={15} />
             </a>
             <a
-              href="https://kardovik.com"
+              href={APP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex h-11 items-center gap-2 rounded-xl border border-white/[0.1] bg-white/[0.04] px-6 text-sm font-semibold text-slate-300 transition-all duration-200 hover:border-white/[0.18] hover:bg-white/[0.07] hover:text-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
             >
               Conhecer Kardovik
@@ -146,49 +144,61 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-14 text-center">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-blue-400">
-              Ferramentas
+              Fase 1 · 5 ferramentas
             </p>
             <h2 className="text-3xl font-bold tracking-tight text-slate-50 sm:text-4xl">
               Tudo que você precisa para decidir com clareza
             </h2>
             <p className="mx-auto mt-4 max-w-lg text-[15px] text-slate-400">
-              Calculadoras especializadas para os principais desafios
-              financeiros da sua clínica ou carreira.
+              Cada ferramenta responde não apenas o quanto — mas o que o resultado
+              significa e qual ação prática o dentista pode considerar.
             </p>
           </div>
 
-          <div className="grid gap-5 md:grid-cols-3">
-            {TOOLS_CONTENT.map((tool, i) => {
-              const Icon = tool.icon
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {TOOLS.map((tool, i) => {
+              const visual = TOOLS_VISUAL[i]
+              const Icon = visual.icon
+              const num = String(i + 1).padStart(2, '0')
               return (
                 <Link
-                  key={tool.href}
+                  key={tool.id}
                   href={tool.href}
-                  className={`group relative rounded-2xl border border-white/[0.08] bg-slate-900/50 p-8 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-white/[0.16] hover:bg-slate-900/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 ${tool.hoverGlow}`}
+                  className={`group relative rounded-2xl border border-white/[0.08] bg-slate-900/50 p-8 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-white/[0.16] hover:bg-slate-900/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 ${visual.hoverGlow}`}
                 >
                   {/* Card number */}
                   <span className="absolute right-6 top-6 font-mono text-xs text-slate-700">
-                    0{i + 1}
+                    {num}
                   </span>
 
                   {/* Icon */}
                   <div
-                    className={`mb-5 inline-flex rounded-xl p-3 transition-transform duration-300 group-hover:scale-110 ${tool.iconBg}`}
+                    className={`mb-5 inline-flex rounded-xl p-3 transition-transform duration-300 group-hover:scale-110 ${visual.iconBg}`}
                   >
-                    <Icon className={tool.iconColor} size={22} />
+                    <Icon className={visual.iconColor} size={22} />
+                  </div>
+
+                  {/* Status badge */}
+                  <div className="mb-3">
+                    <span className="rounded-full border border-white/[0.07] bg-white/[0.03] px-2.5 py-0.5 text-[11px] font-medium text-slate-500">
+                      {tool.status}
+                    </span>
                   </div>
 
                   {/* Content */}
-                  <h3 className="mb-2 text-base font-semibold text-slate-50">
+                  <h3 className="mb-1.5 text-base font-semibold text-slate-50">
                     {tool.title}
                   </h3>
+                  <p className={`mb-2 text-xs font-medium ${visual.iconColor}`}>
+                    {tool.question}
+                  </p>
                   <p className="mb-7 text-sm leading-relaxed text-slate-400">
                     {tool.description}
                   </p>
 
                   {/* Link indicator */}
                   <div className="flex items-center gap-1.5 text-sm font-medium text-blue-400 transition-all duration-200 group-hover:gap-3 group-hover:text-blue-300">
-                    Acessar
+                    Acessar ferramenta
                     <IconArrowRight size={13} />
                   </div>
                 </Link>
@@ -242,7 +252,9 @@ export default function Home() {
               para clínicas odontológicas.
             </p>
             <a
-              href="https://kardovik.com"
+              href={APP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-3 inline-flex items-center gap-1.5 text-xs font-medium text-slate-500 transition-colors duration-200 hover:text-slate-300"
             >
               Conheça o Kardovik Software
@@ -256,12 +268,10 @@ export default function Home() {
       <section className="border-t border-white/[0.05] py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="relative overflow-hidden rounded-3xl border border-white/[0.08] bg-gradient-to-br from-blue-950/25 via-slate-900/70 to-slate-900/70 px-8 py-20 text-center backdrop-blur-sm">
-            {/* Glow */}
             <div
               aria-hidden="true"
               className="pointer-events-none absolute left-1/2 top-0 h-[260px] w-[700px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-600/[0.10] blur-[90px]"
             />
-
             <p className="relative mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-blue-400">
               Comece agora
             </p>
@@ -270,7 +280,7 @@ export default function Home() {
               <br className="hidden sm:block" /> a partir de hoje.
             </h2>
             <p className="relative mx-auto mt-4 max-w-sm text-[15px] text-slate-400">
-              Ferramentas especializadas, gratuitas e disponíveis agora.
+              5 ferramentas especializadas, gratuitas e disponíveis agora.
               Sem cadastro, sem espera.
             </p>
             <div className="relative mt-8">

@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Kardovik Tools — Ferramentas para Odontologia',
+  title: 'Kardovik Tools — Ferramentas Financeiras para Odontologia',
   description:
-    'Calculadoras gratuitas de ROI, parcelamento e rentabilidade para clínicas odontológicas, dentistas e estudantes.',
+    'Calculadoras gratuitas de precificação, hora clínica, parcelamento, ponto de equilíbrio e rentabilidade para dentistas, clínicas e estudantes de odontologia.',
 }
 
 export default function RootLayout({
