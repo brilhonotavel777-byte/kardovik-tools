@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { TOOL_RENTABILIDADE } from '@/lib/constants'
 import { ToolPageShell } from '@/components/tools/ToolPageShell'
 import { IconPieChart } from '@/components/icons'
+import { RentabilidadeProcedimentoSimulator } from '@/features/rentabilidade-procedimento/RentabilidadeProcedimentoSimulator'
 
 export const metadata: Metadata = {
   title: 'Calculadora de Rentabilidade por Procedimento — Kardovik Tools',
@@ -26,6 +27,7 @@ export default function RentabilidadePage() {
       answers={TOOL_RENTABILIDADE.answers}
       interpretation={TOOL_RENTABILIDADE.interpretation}
       action={TOOL_RENTABILIDADE.action}
+      calculatorSlot={<RentabilidadeProcedimentoSimulator />}
     />
   )
 }
