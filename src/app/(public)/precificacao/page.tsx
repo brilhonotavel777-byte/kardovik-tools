@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { TOOL_PRECIFICACAO } from '@/lib/constants'
 import { ToolPageShell } from '@/components/tools/ToolPageShell'
 import { IconTag } from '@/components/icons'
+import { PrecificacaoSimulator } from '@/features/precificacao/PrecificacaoSimulator'
 
 export const metadata: Metadata = {
   title: 'Calculadora de Precificação Odontológica — Kardovik Tools',
@@ -26,6 +27,7 @@ export default function PrecificacaoPage() {
       answers={TOOL_PRECIFICACAO.answers}
       interpretation={TOOL_PRECIFICACAO.interpretation}
       action={TOOL_PRECIFICACAO.action}
+      calculatorSlot={<PrecificacaoSimulator />}
     />
   )
 }
