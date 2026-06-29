@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { TOOL_PONTO_DE_EQUILIBRIO } from '@/lib/constants'
 import { ToolPageShell } from '@/components/tools/ToolPageShell'
 import { IconScale } from '@/components/icons'
+import { PontoEquilibrioSimulator } from '@/features/ponto-de-equilibrio/PontoEquilibrioSimulator'
 
 export const metadata: Metadata = {
   title: 'Calculadora de Ponto de Equilíbrio da Clínica — Kardovik Tools',
@@ -26,6 +27,7 @@ export default function PontoDeEquilibrioPage() {
       answers={TOOL_PONTO_DE_EQUILIBRIO.answers}
       interpretation={TOOL_PONTO_DE_EQUILIBRIO.interpretation}
       action={TOOL_PONTO_DE_EQUILIBRIO.action}
+      calculatorSlot={<PontoEquilibrioSimulator />}
     />
   )
 }
