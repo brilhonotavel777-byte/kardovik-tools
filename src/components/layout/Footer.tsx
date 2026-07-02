@@ -88,7 +88,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="flex flex-col items-center justify-between gap-4 border-t border-white/[0.06] py-6 sm:flex-row">
           <p className="text-xs text-slate-600">
-            © {new Date().getFullYear()} Kardovik. Todos os direitos reservados.
+            © {new Date().getFullYear()} Kisten. Todos os direitos reservados.
           </p>
           <p className="text-xs text-slate-700">
             Kisten Tools é gratuito e sempre será.
