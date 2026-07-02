@@ -20,7 +20,7 @@ export function KardovikInstitutional() {
         em clínicas odontológicas.
       </p>
       <p className="mb-7 text-sm leading-relaxed text-slate-500">
-        Enquanto o Kardovik Tools ajuda você a tomar decisões financeiras com mais
+        Enquanto o Kisten Tools ajuda você a tomar decisões financeiras com mais
         clareza, a plataforma Kardovik foi criada para apoiar decisões estratégicas ao
         longo da jornada do paciente, transformando informação em direcionamento e
         reduzindo oportunidades perdidas.

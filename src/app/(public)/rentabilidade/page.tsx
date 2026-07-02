@@ -5,7 +5,7 @@ import { IconPieChart } from '@/components/icons'
 import { RentabilidadeProcedimentoSimulator } from '@/features/rentabilidade-procedimento/RentabilidadeProcedimentoSimulator'
 
 export const metadata: Metadata = {
-  title: 'Calculadora de Rentabilidade por Procedimento — Kardovik Tools',
+  title: 'Calculadora de Rentabilidade por Procedimento — Kisten Tools',
   description:
     'Calcule se um procedimento odontológico realmente gera lucro após custos, taxas, tempo clínico e materiais. Gratuito e sem cadastro.',
 }

@@ -91,7 +91,7 @@ export function Footer() {
             © {new Date().getFullYear()} Kardovik. Todos os direitos reservados.
           </p>
           <p className="text-xs text-slate-700">
-            Kardovik Tools é gratuito e sempre será.
+            Kisten Tools é gratuito e sempre será.
           </p>
         </div>
       </Container>

@@ -154,7 +154,7 @@ export function ToolPageShell({
         {/* Evolution message — only when no live calculator */}
         {!calculatorSlot && (
           <p className="mb-10 mt-8 border-l-2 border-white/[0.08] pl-4 text-xs leading-relaxed text-slate-600">
-            O Kardovik Tools evolui continuamente. Esta ferramenta está sendo preparada para entregar
+            O Kisten Tools evolui continuamente. Esta ferramenta está sendo preparada para entregar
             cálculo, interpretação e orientação prática em uma experiência simples e gratuita.
           </p>
         )}

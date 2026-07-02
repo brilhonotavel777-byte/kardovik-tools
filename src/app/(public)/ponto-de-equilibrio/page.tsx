@@ -5,7 +5,7 @@ import { IconScale } from '@/components/icons'
 import { PontoEquilibrioSimulator } from '@/features/ponto-de-equilibrio/PontoEquilibrioSimulator'
 
 export const metadata: Metadata = {
-  title: 'Calculadora de Ponto de Equilíbrio da Clínica — Kardovik Tools',
+  title: 'Calculadora de Ponto de Equilíbrio da Clínica — Kisten Tools',
   description:
     'Descubra quanto sua clínica odontológica precisa faturar por mês para não operar no prejuízo. Gratuito e sem cadastro.',
 }

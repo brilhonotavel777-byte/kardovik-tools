@@ -5,7 +5,7 @@ import { IconCreditCard } from '@/components/icons'
 import { ParcelamentoSimulator } from '@/features/parcelamento/ParcelamentoSimulator'
 
 export const metadata: Metadata = {
-  title: 'Simulador de Parcelamento Odontológico — Kardovik Tools',
+  title: 'Simulador de Parcelamento Odontológico — Kisten Tools',
   description:
     'Simule parcelas, taxas e recebimento líquido para vender tratamentos odontológicos sem comprometer sua margem. Gratuito e sem cadastro.',
 }

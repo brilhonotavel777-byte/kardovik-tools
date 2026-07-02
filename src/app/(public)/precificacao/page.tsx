@@ -5,7 +5,7 @@ import { IconTag } from '@/components/icons'
 import { PrecificacaoSimulator } from '@/features/precificacao/PrecificacaoSimulator'
 
 export const metadata: Metadata = {
-  title: 'Calculadora de Precificação Odontológica — Kardovik Tools',
+  title: 'Calculadora de Precificação Odontológica — Kisten Tools',
   description:
     'Defina o preço justo para cada procedimento odontológico com base em custos reais, tempo clínico e margem desejada. Gratuito e sem cadastro.',
 }

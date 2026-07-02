@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Kardovik Tools — Ferramentas Financeiras para Odontologia',
+  title: 'Kisten Tools — Ferramentas Financeiras para Odontologia',
   description:
     'Calculadoras gratuitas de precificação, hora clínica, parcelamento, ponto de equilíbrio e rentabilidade para dentistas, clínicas e estudantes de odontologia.',
 }

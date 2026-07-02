@@ -5,7 +5,7 @@ import { IconClock } from '@/components/icons'
 import { HoraClinicaSimulator } from '@/features/hora-clinica/HoraClinicaSimulator'
 
 export const metadata: Metadata = {
-  title: 'Calculadora de Hora Clínica — Kardovik Tools',
+  title: 'Calculadora de Hora Clínica — Kisten Tools',
   description:
     'Descubra quanto custa cada hora de atendimento na sua clínica odontológica e entenda o impacto real do tempo ocioso. Gratuito e sem cadastro.',
 }

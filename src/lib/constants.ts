@@ -1,4 +1,4 @@
-export const APP_NAME = 'Kardovik Tools'
+export const APP_NAME = 'Kisten Tools'
 export const APP_URL = 'https://kardovik.com.br'
 export const APP_DESCRIPTION =
   'Ferramentas gratuitas para clínicas odontológicas, dentistas e estudantes.'
