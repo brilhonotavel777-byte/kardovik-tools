@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { APP_DESCRIPTION, APP_NAME, APP_URL, TOOLS } from '@/lib/constants'
+import { APP_DESCRIPTION, APP_NAME, COMPANY_URL, TOOLS } from '@/lib/constants'
 import { IconExternalLink } from '@/components/icons'
 import { Container } from '@/components/layout/Container'
 
@@ -24,7 +24,7 @@ export function Footer() {
             <p className="mt-3 max-w-xs text-xs leading-relaxed text-slate-600">
               Parte do ecossistema{' '}
               <a
-                href={APP_URL}
+                href={COMPANY_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-slate-500 underline-offset-2 transition-colors duration-200 hover:text-slate-300 hover:underline"
@@ -62,7 +62,7 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href={APP_URL}
+                  href={COMPANY_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-slate-400 transition-colors duration-200 hover:text-slate-50"
@@ -72,12 +72,12 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href={APP_URL}
+                  href={COMPANY_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 text-xs text-slate-600 transition-colors duration-200 hover:text-slate-400"
                 >
-                  www.kisten.com.br
+                  www.kisten.app
                   <IconExternalLink size={10} />
                 </a>
               </li>

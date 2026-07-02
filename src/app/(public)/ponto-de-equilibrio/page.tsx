@@ -4,10 +4,26 @@ import { ToolPageShell } from '@/components/tools/ToolPageShell'
 import { IconScale } from '@/components/icons'
 import { PontoEquilibrioSimulator } from '@/features/ponto-de-equilibrio/PontoEquilibrioSimulator'
 
+const TITLE = 'Calculadora de Ponto de Equilíbrio da Clínica — Kisten Tools'
+const DESCRIPTION =
+  'Descubra quanto sua clínica odontológica precisa faturar por mês para não operar no prejuízo. Gratuito e sem cadastro.'
+
 export const metadata: Metadata = {
-  title: 'Calculadora de Ponto de Equilíbrio da Clínica — Kisten Tools',
-  description:
-    'Descubra quanto sua clínica odontológica precisa faturar por mês para não operar no prejuízo. Gratuito e sem cadastro.',
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: {
+    canonical: '/ponto-de-equilibrio',
+  },
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    url: '/ponto-de-equilibrio',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: TITLE,
+    description: DESCRIPTION,
+  },
 }
 
 export default function PontoDeEquilibrioPage() {

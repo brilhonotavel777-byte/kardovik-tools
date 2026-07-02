@@ -4,10 +4,26 @@ import { ToolPageShell } from '@/components/tools/ToolPageShell'
 import { IconTag } from '@/components/icons'
 import { PrecificacaoSimulator } from '@/features/precificacao/PrecificacaoSimulator'
 
+const TITLE = 'Calculadora de Precificação Odontológica — Kisten Tools'
+const DESCRIPTION =
+  'Defina o preço justo para cada procedimento odontológico com base em custos reais, tempo clínico e margem desejada. Gratuito e sem cadastro.'
+
 export const metadata: Metadata = {
-  title: 'Calculadora de Precificação Odontológica — Kisten Tools',
-  description:
-    'Defina o preço justo para cada procedimento odontológico com base em custos reais, tempo clínico e margem desejada. Gratuito e sem cadastro.',
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: {
+    canonical: '/precificacao',
+  },
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    url: '/precificacao',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: TITLE,
+    description: DESCRIPTION,
+  },
 }
 
 export default function PrecificacaoPage() {

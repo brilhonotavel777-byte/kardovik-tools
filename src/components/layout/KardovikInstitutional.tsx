@@ -1,4 +1,4 @@
-import { APP_URL } from '@/lib/constants'
+import { COMPANY_URL } from '@/lib/constants'
 import { IconArrowRight, IconExternalLink } from '@/components/icons'
 
 export function KardovikInstitutional() {
@@ -29,12 +29,12 @@ export function KardovikInstitutional() {
       {/* Access points */}
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
         <a
-          href={APP_URL}
+          href={COMPANY_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1 text-xs text-slate-500 transition-colors duration-200 hover:text-slate-300"
         >
-          www.kisten.com.br
+          www.kisten.app
           <IconExternalLink size={10} />
         </a>
 
@@ -43,7 +43,7 @@ export function KardovikInstitutional() {
         </span>
 
         <a
-          href={APP_URL}
+          href={COMPANY_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1.5 rounded-xl border border-white/[0.1] px-4 py-2 text-xs font-medium text-slate-400 transition-all duration-200 hover:border-white/[0.18] hover:text-slate-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#020617]"

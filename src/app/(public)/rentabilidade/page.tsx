@@ -4,10 +4,26 @@ import { ToolPageShell } from '@/components/tools/ToolPageShell'
 import { IconPieChart } from '@/components/icons'
 import { RentabilidadeProcedimentoSimulator } from '@/features/rentabilidade-procedimento/RentabilidadeProcedimentoSimulator'
 
+const TITLE = 'Calculadora de Rentabilidade por Procedimento — Kisten Tools'
+const DESCRIPTION =
+  'Calcule se um procedimento odontológico realmente gera lucro após custos, taxas, tempo clínico e materiais. Gratuito e sem cadastro.'
+
 export const metadata: Metadata = {
-  title: 'Calculadora de Rentabilidade por Procedimento — Kisten Tools',
-  description:
-    'Calcule se um procedimento odontológico realmente gera lucro após custos, taxas, tempo clínico e materiais. Gratuito e sem cadastro.',
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: {
+    canonical: '/rentabilidade',
+  },
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    url: '/rentabilidade',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: TITLE,
+    description: DESCRIPTION,
+  },
 }
 
 export default function RentabilidadePage() {

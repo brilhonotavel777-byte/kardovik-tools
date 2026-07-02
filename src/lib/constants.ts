@@ -1,7 +1,12 @@
 export const APP_NAME = 'Kisten Tools'
-export const APP_URL = 'https://tools.kisten.app'
 export const APP_DESCRIPTION =
   'Ferramentas gratuitas para clínicas odontológicas, dentistas e estudantes.'
+
+// URL of this tools application — used for SEO, canonical, metadataBase, sitemap and robots.
+export const TOOLS_URL = 'https://tools.kisten.app'
+
+// URL of the parent company site — used for institutional links/buttons only.
+export const COMPANY_URL = 'https://kisten.app'
 
 // ── Individual tool data ───────────────────────────────────────────────
 

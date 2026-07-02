@@ -4,10 +4,26 @@ import { ToolPageShell } from '@/components/tools/ToolPageShell'
 import { IconCreditCard } from '@/components/icons'
 import { ParcelamentoSimulator } from '@/features/parcelamento/ParcelamentoSimulator'
 
+const TITLE = 'Simulador de Parcelamento Odontológico — Kisten Tools'
+const DESCRIPTION =
+  'Simule parcelas, taxas e recebimento líquido para vender tratamentos odontológicos sem comprometer sua margem. Gratuito e sem cadastro.'
+
 export const metadata: Metadata = {
-  title: 'Simulador de Parcelamento Odontológico — Kisten Tools',
-  description:
-    'Simule parcelas, taxas e recebimento líquido para vender tratamentos odontológicos sem comprometer sua margem. Gratuito e sem cadastro.',
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: {
+    canonical: '/parcelamento',
+  },
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    url: '/parcelamento',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: TITLE,
+    description: DESCRIPTION,
+  },
 }
 
 export default function ParcelamentoPage() {

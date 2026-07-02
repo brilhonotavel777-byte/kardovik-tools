@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
+import { TOOLS_URL } from '@/lib/constants'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -12,10 +13,31 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 })
 
+const TITLE = 'Kisten Tools — Ferramentas Financeiras para Odontologia'
+const DESCRIPTION =
+  'Calculadoras financeiras gratuitas para odontologia: precificação, parcelamento, hora clínica, ponto de equilíbrio e rentabilidade por procedimento.'
+
 export const metadata: Metadata = {
-  title: 'Kisten Tools — Ferramentas Financeiras para Odontologia',
-  description:
-    'Calculadoras gratuitas de precificação, hora clínica, parcelamento, ponto de equilíbrio e rentabilidade para dentistas, clínicas e estudantes de odontologia.',
+  metadataBase: new URL(TOOLS_URL),
+  title: TITLE,
+  description: DESCRIPTION,
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    url: TOOLS_URL,
+    siteName: 'Kisten Tools',
+    locale: 'pt_BR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: TITLE,
+    description: DESCRIPTION,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 export default function RootLayout({
