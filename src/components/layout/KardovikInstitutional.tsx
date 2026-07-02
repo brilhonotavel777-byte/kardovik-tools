@@ -34,7 +34,7 @@ export function KardovikInstitutional() {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1 text-xs text-slate-500 transition-colors duration-200 hover:text-slate-300"
         >
-          www.kardovik.com.br
+          www.kisten.com.br
           <IconExternalLink size={10} />
         </a>
 
