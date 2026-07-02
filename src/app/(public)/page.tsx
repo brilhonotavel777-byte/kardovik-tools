@@ -140,7 +140,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="inline-flex h-11 items-center gap-2 rounded-xl border border-white/[0.1] bg-white/[0.04] px-6 text-sm font-semibold text-slate-300 transition-all duration-200 hover:border-white/[0.18] hover:bg-white/[0.07] hover:text-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
             >
-              Conhecer Software de Condução Kisten
+              Conhecer Kisten Decision
             </a>
           </div>
         </div>

@@ -35,14 +35,14 @@ export function Navbar() {
 
           {/* CTAs */}
           <div className="flex items-center gap-2">
-            {/* Secondary — Conhecer Software de Condução Kisten, desktop only, opens in new tab */}
+            {/* Secondary — Conhecer Kisten Decision, desktop only, opens in new tab */}
             <a
               href={COMPANY_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="hidden rounded-xl border border-white/[0.1] px-4 py-2 text-sm font-medium text-slate-400 transition-all duration-200 hover:border-white/[0.18] hover:text-slate-200 md:inline-flex focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
             >
-              Conhecer Software de Condução Kisten
+              Conhecer Kisten Decision
             </a>
 
             {/* Primary CTA */}

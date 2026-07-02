@@ -48,7 +48,7 @@ export function KardovikInstitutional() {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1.5 rounded-xl border border-white/[0.1] px-4 py-2 text-xs font-medium text-slate-400 transition-all duration-200 hover:border-white/[0.18] hover:text-slate-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#020617]"
         >
-          Conhecer Software de Condução Kisten
+          Conhecer Kisten Decision
           <IconArrowRight size={12} />
         </a>
       </div>
