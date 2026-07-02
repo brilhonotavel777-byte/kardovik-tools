@@ -1,5 +1,5 @@
 export const APP_NAME = 'Kisten Tools'
-export const APP_URL = 'https://kisten.com.br'
+export const APP_URL = 'https://tools.kisten.app'
 export const APP_DESCRIPTION =
   'Ferramentas gratuitas para clínicas odontológicas, dentistas e estudantes.'
 

@@ -14,9 +14,6 @@ const securityHeaders = [
 ]
 
 const nextConfig: NextConfig = {
-  // Serves the app under kisten.com.br/tools without touching internal route structure —
-  // Next.js prefixes all next/link hrefs with this automatically at build time.
-  basePath: '/tools',
   async headers() {
     return [
       {
