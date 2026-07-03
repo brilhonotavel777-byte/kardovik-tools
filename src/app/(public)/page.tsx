@@ -11,7 +11,7 @@ import {
   IconTag,
   IconZap,
 } from '@/components/icons'
-import { COMPANY_URL, TOOLS } from '@/lib/constants'
+import { COMPANY_URL, DECISION_URL, TOOLS } from '@/lib/constants'
 
 // Visual mapping for each tool — icon component + color theme
 const TOOLS_VISUAL = [
@@ -135,7 +135,7 @@ export default function Home() {
               <IconArrowRight size={15} />
             </a>
             <a
-              href={COMPANY_URL}
+              href={DECISION_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex h-11 items-center gap-2 rounded-xl border border-white/[0.1] bg-white/[0.04] px-6 text-sm font-semibold text-slate-300 transition-all duration-200 hover:border-white/[0.18] hover:bg-white/[0.07] hover:text-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"

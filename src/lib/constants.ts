@@ -8,6 +8,9 @@ export const TOOLS_URL = 'https://tools.kisten.app'
 // URL of the parent company site — used for institutional links/buttons only.
 export const COMPANY_URL = 'https://kisten.app'
 
+// URL of the Kisten Decision product — used only by "Conhecer Kisten Decision" CTAs.
+export const DECISION_URL = 'https://decision.kisten.app'
+
 // ── Individual tool data ───────────────────────────────────────────────
 
 export const TOOL_PRECIFICACAO = {
