@@ -11,7 +11,7 @@ import {
   IconTag,
   IconZap,
 } from '@/components/icons'
-import { COMPANY_URL, DECISION_URL, TOOLS } from '@/lib/constants'
+import { DECISION_URL, TOOLS } from '@/lib/constants'
 
 // Visual mapping for each tool — icon component + color theme
 const TOOLS_VISUAL = [
@@ -254,17 +254,17 @@ export default function Home() {
           <div className="mx-auto max-w-xl text-center">
             <p className="text-sm leading-relaxed text-slate-500">
               Desenvolvido pela{' '}
-              <span className="font-medium text-slate-400">Kardovik</span>
+              <span className="font-medium text-slate-400">Kisten</span>
               {', '}criadora do sistema de condução estratégica da decisão
               para clínicas odontológicas.
             </p>
             <a
-              href={COMPANY_URL}
+              href={DECISION_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-3 inline-flex items-center gap-1.5 text-xs font-medium text-slate-500 transition-colors duration-200 hover:text-slate-300"
             >
-              Conheça o Kardovik Software
+              Conheça o Kisten Decision
               <IconArrowRight size={11} />
             </a>
           </div>

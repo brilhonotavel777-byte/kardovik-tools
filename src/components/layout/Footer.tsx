@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { APP_DESCRIPTION, APP_NAME, COMPANY_URL, TOOLS } from '@/lib/constants'
+import { APP_DESCRIPTION, APP_NAME, COMPANY_URL, DECISION_URL, TOOLS } from '@/lib/constants'
 import { IconExternalLink } from '@/components/icons'
 import { Container } from '@/components/layout/Container'
 
@@ -29,7 +29,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="text-slate-500 underline-offset-2 transition-colors duration-200 hover:text-slate-300 hover:underline"
               >
-                Kardovik
+                Kisten
               </a>
               {' '}— soluções para clínicas odontológicas.
             </p>
@@ -54,30 +54,30 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Kardovik — external, opens in new tab */}
+          {/* Kisten — external, opens in new tab */}
           <div>
             <h3 className="mb-4 text-xs font-semibold uppercase tracking-widest text-slate-600">
-              Kardovik
+              Kisten
             </h3>
             <ul className="space-y-3">
               <li>
                 <a
-                  href={COMPANY_URL}
+                  href={DECISION_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-slate-400 transition-colors duration-200 hover:text-slate-50"
                 >
-                  Conheça o Kardovik Software
+                  Conheça o Kisten Decision
                 </a>
               </li>
               <li>
                 <a
-                  href={COMPANY_URL}
+                  href={DECISION_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 text-xs text-slate-600 transition-colors duration-200 hover:text-slate-400"
                 >
-                  www.kisten.app
+                  decision.kisten.app
                   <IconExternalLink size={10} />
                 </a>
               </li>

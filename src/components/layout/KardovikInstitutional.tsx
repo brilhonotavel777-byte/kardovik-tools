@@ -1,4 +1,4 @@
-import { COMPANY_URL, DECISION_URL } from '@/lib/constants'
+import { DECISION_URL } from '@/lib/constants'
 import { IconArrowRight, IconExternalLink } from '@/components/icons'
 
 export function KardovikInstitutional() {
@@ -10,18 +10,18 @@ export function KardovikInstitutional() {
           <span className="text-[10px] font-bold text-white">K</span>
         </div>
         <span className="text-sm font-semibold text-slate-300">
-          Desenvolvido pela Kardovik
+          Desenvolvido pela Kisten
         </span>
       </div>
 
       {/* Body */}
       <p className="mb-3 text-sm leading-relaxed text-slate-500">
-        A Kardovik desenvolve soluções para apoiar a condução estratégica de decisões
+        A Kisten desenvolve soluções para apoiar a condução estratégica de decisões
         em clínicas odontológicas.
       </p>
       <p className="mb-7 text-sm leading-relaxed text-slate-500">
         Enquanto o Kisten Tools ajuda você a tomar decisões financeiras com mais
-        clareza, a plataforma Kardovik foi criada para apoiar decisões estratégicas ao
+        clareza, a plataforma Kisten foi criada para apoiar decisões estratégicas ao
         longo da jornada do paciente, transformando informação em direcionamento e
         reduzindo oportunidades perdidas.
       </p>
@@ -29,12 +29,12 @@ export function KardovikInstitutional() {
       {/* Access points */}
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
         <a
-          href={COMPANY_URL}
+          href={DECISION_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1 text-xs text-slate-500 transition-colors duration-200 hover:text-slate-300"
         >
-          www.kisten.app
+          decision.kisten.app
           <IconExternalLink size={10} />
         </a>
 
